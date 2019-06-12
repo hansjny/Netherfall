@@ -1,0 +1,4 @@
+06/12/2018 21:18:38
+ [NETWORK]  ERROR: bind: Den forespurte adressen er ikke gyldig i konteksten
+06/12/2018 21:28:54
+ [NETWORK]  ERROR: bind: Den forespurte adressen er ikke gyldig i konteksten
