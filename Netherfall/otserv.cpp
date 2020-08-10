@@ -392,7 +392,7 @@ void mainLoader(const CommandLineOptions& command_opts, ServiceManager* service_
 #elif defined __LUA_NAME_ALTER__
 	const char* configname = "otserv.lua";
 #else
-	const char* configname = "C:\\Users\\Nerdforge\\Documents\\Netherkeep\\config.lua";
+	const char* configname = "config.lua";
 #endif
 	if(command_opts.configfile != ""){
 		configname = command_opts.configfile.c_str();
@@ -459,7 +459,7 @@ void mainLoader(const CommandLineOptions& command_opts, ServiceManager* service_
 		g_config.setString(ConfigManager::DATA_DIRECTORY, dd);
 	}
 #endif
-	g_config.setString(ConfigManager::DATA_DIRECTORY, "C:/Users/Nerdforge/Documents/Netherkeep/data/");
+	g_config.setString(ConfigManager::DATA_DIRECTORY, "data/");
 	std::cout << ":: Using data directory " << g_config.getString(ConfigManager::DATA_DIRECTORY).c_str() << "... " << std::flush;
 	std::cout << "[done]" << std::endl;
 
