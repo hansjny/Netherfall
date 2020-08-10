@@ -84,7 +84,12 @@
       <Optimization>Disabled</Optimization>
       <SDLCheck>true</SDLCheck>
       <ConformanceMode>true</ConformanceMode>
+      <AdditionalIncludeDirectories>C:\SDK\otsdk\libraries\inc\sqlite3;C:\SDK\otsdk\libraries\inc\mysql;C:\SDK\otsdk\libraries\inc\mpir;C:\SDK\otsdk\libraries\inc\lua;C:\SDK\otsdk\libraries\inc\libxml;C:\SDK\otsdk\libraries\inc\libiconv;C:\SDK\otsdk\libraries\inc\boost;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+      <PreprocessorDefinitions>_WINSOCK_DEPRECATED_NO_WARNINGS;%(PreprocessorDefinitions)</PreprocessorDefinitions>
     </ClCompile>
+    <Link>
+      <AdditionalLibraryDirectories>C:\SDK\otsdk\libraries\lib;%(AdditionalLibraryDirectories)</AdditionalLibraryDirectories>
+    </Link>
   </ItemDefinitionGroup>
   <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">
     <ClCompile>

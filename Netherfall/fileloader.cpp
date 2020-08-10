@@ -22,7 +22,7 @@
 
 #include "fileloader.h"
 #include <cmath>
-
+#include <algorithm>
 FileLoader::FileLoader()
 {
 	m_file = NULL;
