@@ -134,6 +134,8 @@ bool ConfigManager::loadFile(const std::string& _filename)
 	m_confInteger[DEFAULT_DESPAWNRADIUS] = getGlobalNumber(L, "despawnradius", 50);
 	m_confInteger[ALLOW_CLONES] = getGlobalBoolean(L, "allowclones", false);
 	m_confInteger[PARTY_MEMBER_EXP_BONUS] = getGlobalNumber(L, "party_exp_mul", 5);
+	m_confInteger[PLAYER_START_SPEED] = getGlobalNumber(L, "player_start_speed", 220);
+	m_confInteger[CREATURE_EXTRA_SPEED] = getGlobalNumber(L, "creature_extra_speed", 0);
 	m_confInteger[RATE_EXPERIENCE] = getGlobalNumber(L, "rate_exp", 1);
 	m_confInteger[RATE_SKILL] = getGlobalNumber(L, "rate_skill", 1);
 	m_confInteger[RATE_LOOT] = getGlobalNumber(L, "rate_loot", 1);

@@ -41,6 +41,7 @@
 #include <iostream>
 #include <algorithm>
 #include <cstdlib>
+#include <cmath>
 
 extern ConfigManager g_config;
 extern Game g_game;
@@ -850,11 +851,13 @@ int32_t Player::getStepSpeed() const
 
 void Player::updateBaseSpeed()
 {
+	int64_t startSpeed = g_config.getNumber(ConfigManager::PLAYER_START_SPEED);
 	if(!hasFlag(PlayerFlag_SetMaxSpeed)){
-		baseSpeed = 220 + (2* (level - 1));
+		// Regular formula:  220 + (2 * (level - 1))
+		baseSpeed = startSpeed + 90*log(0.2 * level + 1);
 	}
 	else{
-		baseSpeed = 900;
+		baseSpeed = 1200;
 	};
 }
 

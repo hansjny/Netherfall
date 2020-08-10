@@ -70,7 +70,7 @@ Creature()
 
 	health     = mType->health;
 	healthMax  = mType->health_max;
-	baseSpeed = mType->base_speed;
+	baseSpeed = mType->base_speed + g_config.getNumber(ConfigManager::CREATURE_EXTRA_SPEED); ;
 	internalLight.level = mType->lightLevel;
 	internalLight.color = mType->lightColor;
 
